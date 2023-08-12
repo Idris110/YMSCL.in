@@ -93,8 +93,6 @@
 
   /* Mobile Navigation
   -------------------------------------------------------*/
-  var $navDropdown = $('.nav__dropdown');
-
   $('.nav__dropdown-trigger').on('click', function() {
     var $this = $(this);
     $this.next($('.nav__dropdown-menu')).slideToggle();
@@ -108,11 +106,11 @@
       $('.nav__dropdown-menu').addClass('hide-dropdown');
     });
 
-    $navDropdown.on('click', '> a', function(e) {
+    $('.nav__dropdown').on('click', '> a', function(e) {
       e.preventDefault();
     });
 
-    $navDropdown.on('click',function(e) {
+    $('.nav__dropdown').on('click',function(e) {
       e.stopPropagation();
       $('.nav__dropdown-menu').removeClass('hide-dropdown');
     });

@@ -4,9 +4,9 @@
 @font-face {
   font-family: 'Icon54';
   src:
-    url('../fonts/Icon54.ttf?3rh4gs') format('truetype'),
-    url('../fonts/Icon54.woff?3rh4gs') format('woff'),
-    url('../fonts/Icon54.svg?3rh4gs#Icon54') format('svg');
+    url('../fonts/Icon54a945.ttf?3rh4gs') format('truetype'),
+    url('../fonts/Icon54a945.woff?3rh4gs') format('woff'),
+    url('../fonts/Icon54a945.svg?3rh4gs#Icon54') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -363,12 +363,12 @@
 -------------------------------------------------------*/
 @font-face {
   font-family: 'ui-icons';
-  src: url('../fonts/ui-icons.eot?31292061');
-  src: url('../fonts/ui-icons.eot?31292061#iefix') format('embedded-opentype'),
-       url('../fonts/ui-icons.woff2?31292061') format('woff2'),
-       url('../fonts/ui-icons.woff?31292061') format('woff'),
-       url('../fonts/ui-icons.ttf?31292061') format('truetype'),
-       url('../fonts/ui-icons.svg?31292061#ui-icons') format('svg');
+  src: url('../fonts/ui-icons6056.eot?31292061');
+  src: url('../fonts/ui-icons6056.eot?31292061#iefix') format('embedded-opentype'),
+       url('../fonts/ui-icons6056.woff2?31292061') format('woff2'),
+       url('../fonts/ui-icons6056.woff?31292061') format('woff'),
+       url('../fonts/ui-icons6056.ttf?31292061') format('truetype'),
+       url('../fonts/ui-icons6056.svg?31292061#ui-icons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
