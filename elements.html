@@ -117,7 +117,7 @@
 									<i class="ui-arrow-down nav__dropdown-trigger" role="button" aria-haspopup="true"
 										aria-expanded="false"></i>
 								</li>
-								
+
 								<li class="nav__dropdown">
 									<a href="blog-masonry.html" aria-haspopup="true">Blog</a>
 									<i class="ui-arrow-down nav__dropdown-trigger" role="button" aria-haspopup="true"
@@ -160,16 +160,13 @@
 									target="_blank"><i class="ui-instagram"></i></a>
 							</div>
 						</div>
-
 					</div> <!-- end flex-parent -->
 				</div> <!-- end container -->
-
 			</div>
 		</header> <!-- end navigation -->
 
 
 		<div class="content-wrapper content-wrapper--boxed oh">
-
 			<!-- Page Title -->
 			<section class="page-title bg-dark-overlay text-center"
 				style="background-image: url(img/page-title/about.jpg);">
@@ -189,9 +186,14 @@
 			</section> <!-- end page title -->
 
 
+
+
+
 			<!-- Elements -->
-			<section class="section-wrap">
-				<div class="container">
+			<section class="section-wrap ">
+				<img class="img-fluid" id="denied" src="https://media.istockphoto.com/id/1401548924/vector/access-denied-in-cartoon-style-flat-icon-sign-forbidden.jpg?s=612x612&w=0&k=20&c=0LJ4OTKXGjgrojTumA9-lU1aqETWnnKQUOZDDB1GrRA=" alt="Access Denied">
+
+				<div class="container d-none" id="accept">
 					<div class="row justify-content-center">
 						<div class="col-lg-10">
 
@@ -221,6 +223,9 @@
 					</div>
 				</div>
 			</section> <!-- end elements -->
+
+
+
 
 
 			<!-- Footer -->
@@ -308,6 +313,18 @@
 	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 	<script>
+		const form = document.getElementById("accept");
+		const deny = document.getElementById("denied");
+
+		const queryString = window.location.search;
+		const urlParams = new URLSearchParams(queryString);
+		console.log(urlParams.get("password"), "url param");
+		if(urlParams.get("password") === "1234"){
+			form.classList.remove("d-none");
+			deny.classList.add("d-none");
+		}
+
+
 		document.addEventListener("DOMContentLoaded", function () {
 			const uploadForm = document.getElementById("uploadForm");
 			const pdfFileInput = document.getElementById("pdfFile");
