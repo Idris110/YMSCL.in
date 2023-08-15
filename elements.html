@@ -69,41 +69,37 @@
 									<i class="ui-arrow-down nav__dropdown-trigger" role="button" aria-haspopup="true"
 										aria-expanded="false"> </i>
 								</li>
-
-								<li class="nav__dropdown">
-									<a href="about.html" >About</a>
-								</li>
-
+								
 								<li class="nav__dropdown">
 									<a href="services.html" aria-haspopup="true">Services</a>
 								</li>
-
-								<li class="nav__dropdown">
-									<a href="contact.html" aria-haspopup="true">Contact</a>
-								</li>
-
+								
 								<li class="nav__dropdown">
 									<a href="portfolio.html" aria-haspopup="true">Portfolio</a>
 								</li>
-
+								
 								<li class="nav__dropdown">
 									<a href="portfolio-gallery.html" aria-haspopup="true">Portfolio Gallery</a>
 								</li>
-
-								<li class="nav__dropdown">
-									<a href="services.html" aria-haspopup="true">About</a>
-								</li>
-
+								
 								<li class="nav__dropdown">
 									<a href="single-service.html" aria-haspopup="true">Circular</a>
 								</li>
-
+								
 								<!-- <li class="nav__dropdown">
 									<a href="elements.html" aria-haspopup="true">tempUpload</a>
 								</li> -->
-
+								
 								<li class="nav__dropdown">
 									<a href="blog-masonry.html" aria-haspopup="true">Blog</a>
+								</li>
+								
+								<li class="nav__dropdown">
+									<a href="about.html" >About</a>
+								</li>
+								
+								<li class="nav__dropdown">
+									<a href="contact.html" aria-haspopup="true">Contact</a>
 								</li>
 							</ul> <!-- end menu -->
 							<div class="nav__phone nav__phone--mobile d-lg-none">
@@ -301,7 +297,7 @@
 		const queryString = window.location.search;
 		const urlParams = new URLSearchParams(queryString);
 		console.log(urlParams.get("password"), "url param");
-		if(urlParams.get("password") === "YMS-2030"){
+		if(urlParams.get("password") === "YMS-2023"){
 			form.classList.remove("d-none");
 			deny.classList.add("d-none");
 		}
