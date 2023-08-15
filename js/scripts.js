@@ -95,7 +95,7 @@
   -------------------------------------------------------*/
   $('.nav__dropdown-trigger').on('click', function() {
     var $this = $(this);
-    $this.next($('.nav__dropdown-menu')).slideToggle();
+    // $this.next($('.nav__dropdown-menu')).slideToggle();
     $this.attr('aria-expanded', function(index, attr){
       return attr == 'true' ? 'false' : 'true';
     });
@@ -107,7 +107,7 @@
     });
 
     $('.nav__dropdown').on('click', '> a', function(e) {
-      e.preventDefault();
+      // e.preventDefault();
     });
 
     $('.nav__dropdown').on('click',function(e) {

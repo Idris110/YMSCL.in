@@ -28,7 +28,7 @@
 
 <body>
 
-	<!-- Preloader -->
+	<!-- Preloaderhttp://127.0.0.1:5501/elements.html?password=YMS-2030 -->
 	<div class="loader-mask">
 		<div class="loader">
 			"Loading..."
@@ -46,7 +46,7 @@
 						<div class="nav__header">
 							<!-- Logo -->
 							<a href="index.html" class="logo-container flex-child">
-								<img class="logo" src="img/logo.png" srcset="img/logo.png 1x, img/logo@2x.png 2x"
+								<img class="logo" src="img/yml/ymsLogo.png" width="80px"
 									alt="logo">
 							</a>
 
@@ -67,61 +67,43 @@
 								<li class="nav__dropdown active">
 									<a href="index.html" aria-haspopup="true">Home</a>
 									<i class="ui-arrow-down nav__dropdown-trigger" role="button" aria-haspopup="true"
-										aria-expanded="false"></i>
+										aria-expanded="false"> </i>
 								</li>
 
 								<li class="nav__dropdown">
-									<a href="about.html" aria-haspopup="true">About</a>
-									<i class="ui-arrow-down nav__dropdown-trigger" role="button" aria-haspopup="true"
-										aria-expanded="false"></i>
+									<a href="about.html" >About</a>
 								</li>
 
 								<li class="nav__dropdown">
 									<a href="services.html" aria-haspopup="true">Services</a>
-									<i class="ui-arrow-down nav__dropdown-trigger" role="button" aria-haspopup="true"
-										aria-expanded="false"></i>
 								</li>
 
 								<li class="nav__dropdown">
 									<a href="contact.html" aria-haspopup="true">Contact</a>
-									<i class="ui-arrow-down nav__dropdown-trigger" role="button" aria-haspopup="true"
-										aria-expanded="false"></i>
 								</li>
 
 								<li class="nav__dropdown">
 									<a href="portfolio.html" aria-haspopup="true">Portfolio</a>
-									<i class="ui-arrow-down nav__dropdown-trigger" role="button" aria-haspopup="true"
-										aria-expanded="false"></i>
 								</li>
 
 								<li class="nav__dropdown">
 									<a href="portfolio-gallery.html" aria-haspopup="true">Portfolio Gallery</a>
-									<i class="ui-arrow-down nav__dropdown-trigger" role="button" aria-haspopup="true"
-										aria-expanded="false"></i>
 								</li>
 
 								<li class="nav__dropdown">
 									<a href="services.html" aria-haspopup="true">About</a>
-									<i class="ui-arrow-down nav__dropdown-trigger" role="button" aria-haspopup="true"
-										aria-expanded="false"></i>
 								</li>
 
 								<li class="nav__dropdown">
 									<a href="single-service.html" aria-haspopup="true">Circular</a>
-									<i class="ui-arrow-down nav__dropdown-trigger" role="button" aria-haspopup="true"
-										aria-expanded="false"></i>
 								</li>
 
-								<li class="nav__dropdown">
+								<!-- <li class="nav__dropdown">
 									<a href="elements.html" aria-haspopup="true">tempUpload</a>
-									<i class="ui-arrow-down nav__dropdown-trigger" role="button" aria-haspopup="true"
-										aria-expanded="false"></i>
-								</li>
+								</li> -->
 
 								<li class="nav__dropdown">
 									<a href="blog-masonry.html" aria-haspopup="true">Blog</a>
-									<i class="ui-arrow-down nav__dropdown-trigger" role="button" aria-haspopup="true"
-										aria-expanded="false"></i>
 								</li>
 							</ul> <!-- end menu -->
 							<div class="nav__phone nav__phone--mobile d-lg-none">
@@ -129,7 +111,7 @@
 								<a href="tel:+91-022-6742 7403" class="nav__phone-number">+91-022-6742 7403</a>
 							</div>
 
-							<div class="nav__socials nav__socials--mobile d-lg-none">
+							<!-- <div class="nav__socials nav__socials--mobile d-lg-none">
 								<div class="socials">
 									<a href="#" class="social social-twitter" aria-label="twitter" title="twitter"
 										target="_blank"><i class="ui-twitter"></i></a>
@@ -140,7 +122,7 @@
 									<a href="#" class="social social-instagram" aria-label="instagram" title="instagram"
 										target="_blank"><i class="ui-instagram"></i></a>
 								</div>
-							</div>
+							</div> -->
 						</nav> <!-- end nav-wrap -->
 
 						<div class="nav__phone nav--align-right d-none d-lg-block">
@@ -148,7 +130,7 @@
 							<a href="tel:+91-022-6742 7403" class="nav__phone-number">+91-022-6742 7403</a>
 						</div>
 
-						<div class="nav__socials d-none d-lg-block">
+						<!-- <div class="nav__socials d-none d-lg-block">
 							<div class="socials">
 								<a href="#" class="social social-twitter" aria-label="twitter" title="twitter"
 									target="_blank"><i class="ui-twitter"></i></a>
@@ -159,7 +141,7 @@
 								<a href="#" class="social social-instagram" aria-label="instagram" title="instagram"
 									target="_blank"><i class="ui-instagram"></i></a>
 							</div>
-						</div>
+						</div> -->
 					</div> <!-- end flex-parent -->
 				</div> <!-- end container -->
 			</div>
@@ -319,7 +301,7 @@
 		const queryString = window.location.search;
 		const urlParams = new URLSearchParams(queryString);
 		console.log(urlParams.get("password"), "url param");
-		if(urlParams.get("password") === "1234"){
+		if(urlParams.get("password") === "YMS-2030"){
 			form.classList.remove("d-none");
 			deny.classList.add("d-none");
 		}
