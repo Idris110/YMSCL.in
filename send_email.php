@@ -3,7 +3,7 @@ error_reporting(E_ALL);
 ini_set("display_errors", 1);
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $recipient = "*@gmail.com"; // Replace with your email address
+    $recipient = "yms@ymscl.in"; // Replace with your email address
     $name = $_POST['name'];
     $email = $_POST['email'];
     $subject = $_POST['subject'];
